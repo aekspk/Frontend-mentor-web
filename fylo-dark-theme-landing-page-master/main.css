@@ -1,0 +1,455 @@
+body {
+    background-color: #1C2230;  
+}
+
+/* -- Header Section -- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 81px 78px 100px ;
+}
+
+.logo {
+    height: 42px;
+    width: auto;
+}
+
+.navlist {
+    display: flex;
+}
+
+.nav-link {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 1.5px white,0 0 1.5px white,0 0 1.5px white;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 58px;
+    
+}
+
+
+/* -- Hero Section -- */
+
+.hero {
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;
+    background-image: url('../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg'); 
+    background-repeat: no-repeat;
+    background-position-y: 106%;
+    background-position-x: 80%;
+    background-size: 100%;
+
+}
+
+.hero-title {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 24px 24px 46px;
+    line-height: 60px; /* -- It use for configure spacing of "<br>" tag -- */
+}
+
+.hero-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 34px;
+    padding-bottom: 46px;
+}
+
+
+.hero-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 108px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-image: linear-gradient(135deg, #4EC6D4, #0aa4b6);
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-image: linear-gradient(135deg, #7bced7, #73bdc5);
+}
+
+.hero-button:active {
+    opacity: 0.9;
+}
+
+/* -- About Section -- */
+.about {
+    color: white;
+    background-color: #191F2A;
+    padding: 81px 80px 100px ;
+
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+}
+
+.about-item {
+    text-align: center;
+}
+
+.about-image {
+    margin-bottom: 16px;
+}
+
+.about-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.about-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+
+
+/* -- Content Section -- */
+.content {
+    color: white;
+    background-color: #191F2A;
+    padding: 0px 124px 140px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content-image {
+
+}
+
+.content-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 19px;
+}
+
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.content-icon {
+    display: flex;
+    align-items: center;
+}
+
+.content-link {
+    text-decoration: none;
+    background-size: 14px 14px;
+    background-image: url(images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 70%;
+    padding-right: 20px;
+    color: #62E0D9; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #62E0D9;
+}
+
+.content-link:hover {
+    background-image: url(images/icon-arrow-white.svg);
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+/* -- Feedback Section -- */
+.feedback {
+    color: white;
+    padding: 0 78px 190px;
+    background-color: #191F2A;
+
+}
+
+.feedback-list {
+display: flex;
+justify-content: center;
+}
+
+
+.feedback-item {
+    background-color: #202a3c;
+    padding: 40px 30px 28px 28px;
+    border-radius: 6px;
+
+}
+
+.feedback-item:not(:last-of-type) {
+    margin-right: 48px;
+}
+
+.feedback-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+
+.feedback-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 22px;
+}
+
+.personal {
+    
+}
+
+.profile-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.job {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+    font-weight: lighter;
+}
+
+/* -- Input Section -- */
+
+.input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #191F2A;
+    padding: 81px 78px 100px ;
+    background-size: 100px;
+}
+
+.input-box {
+    position: absolute;
+    top: 10px;
+    background-color: #1C2230;
+    width: fit-content;
+    padding: 42px 77px 36px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.input-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.input-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 38px;
+
+}
+
+.input-email {
+    border: none;
+    border-radius: 50px;
+    height: 48px;
+    width: 480px;
+    margin-right: 16px;
+    padding-left: 36px;
+}
+
+input::placeholder {
+    color: rgb(184, 178, 178);
+}
+
+input:focus-visible {
+    outline-color: #62E0D9;
+}
+
+
+.get-start-button{
+    font-size: 14px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-image: linear-gradient(135deg, #4EC6D4, #0aa4b6);
+    cursor: pointer;
+}
+
+.get-start-button:hover {
+    background-image: linear-gradient(135deg, #7bced7, #73bdc5);
+}
+
+.get-start-button:active {
+    opacity: 0.9;
+}
+
+/* -- Footer Section -- */
+
+.footer {
+color: white;
+background-color: #0b1524;
+padding: 150px 28px 52px;
+}
+
+.footer-with-logo {
+    margin: 0 67px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-logo {
+    height: 32px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.footer-icon {
+    margin-right: 24px;
+    height: 100%;
+}
+
+.footer-item {
+    /* margin-right: 40px; */
+}
+
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 22px;
+}
+
+.footer-text-phone {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.footer-text-mail {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.about-us-text {
+    line-height: 20px;
+
+}
+
+.contact-us-text {
+    line-height: 20px;
+}
+
+.footer-address {
+    display: flex;
+    align-items: flex-start;
+}
+
+.phone-number-icon-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+.email-icon-group {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact-icon {
+    display: flex;
+}
+
+
+.social-icon {
+    color: white;
+    padding: 8px 8px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 50%;
+    text-align: center;
+    height: 36px;
+    width: 36px;
+}
+
+.social-icon:not(:last-child) {
+    margin-right: 16px;
+}
+
+.social-icon:hover {
+    border-color: #62E0D9;
+    color: #62E0D9;
+}
+
+.attribution {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+
+}
+
+.credit{
+    background-color: #0b1524;
+    text-align: center;
+}
+
+.credit-link {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+
+}
+
+.my-credit {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.my-credit {
+    color: white;
+}
